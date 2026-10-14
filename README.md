@@ -14,6 +14,7 @@ The games are served from `https://apulido305.github.io/<repo>/`, because the sc
 | Elemental Arcade | https://apulido305.github.io/elemental-arcade/ | [elemental-arcade](https://github.com/apulido305/elemental-arcade) |
 | Cell Arcade | https://apulido305.github.io/cell-arcade/ | [cell-arcade](https://github.com/apulido305/cell-arcade) |
 | Space Arcade | https://apulido305.github.io/earthspace/ | [earthspace](https://github.com/apulido305/earthspace) |
+| Code Arcade | https://apulido305.github.io/code-arcade/ | [code-arcade](https://github.com/apulido305/code-arcade) |
 | Spelling Flashcards | https://apulido305.github.io/spelling/ | [spelling](https://github.com/apulido305/spelling) |
 | Multiplication Practice | https://apulido305.github.io/multiplication/ | [multiplication](https://github.com/apulido305/multiplication) |
 
