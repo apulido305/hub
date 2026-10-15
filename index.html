@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mr. Pulido's App Hub</title>
-<meta name="description" content="Mr. Pulido's study games: Elemental Arcade, Spelling Flashcards and Multiplication Practice.">
+<meta name="description" content="Mr. Pulido's study games: Elemental, Cell, Space, Code, Scripture and Math Arcade, Spelling Flashcards and Multiplication Practice.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236750a4'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%23e9ddff' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -227,6 +227,12 @@ main { padding: 72px 32px 64px; }
 .spell-hint { font-family: var(--mono); font-size: 11px; color: #cbc4d2; transform: translateY(-8px); }
 .spell-hint b { color: #4ade80; font-weight: 500; }
 
+/* thumbnail art: Math Arcade */
+.art-math { background: #101433; background-image: linear-gradient(rgba(122,132,214,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(122,132,214,.18) 1px, transparent 1px); background-size: 16px 16px; display: grid; place-items: center; overflow: hidden; }
+.art-math svg { width: 78%; max-width: 260px; height: auto; }
+.art-math .eq { position: absolute; right: 10%; top: 12%; font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 22px; color: #ffb3cc; }
+.chip.pink { background: #ffe3ee; color: #831843; }
+
 /* thumbnail art: Multiplication */
 .art-math { background: radial-gradient(circle at 75% 70%, #4a3b10 0%, #17131f 65%); display: grid; place-items: center; }
 .card-stack { position: relative; width: 170px; height: 104px; transform: translateY(-8px); }
@@ -340,6 +346,7 @@ footer { margin-top: 48px; font-family: var(--mono); font-size: 11px; color: var
       <a href="https://apulido305.github.io/code-arcade/">Code Arcade</a>
       <a href="https://apulido305.github.io/bible-arcade/">Scripture Arcade</a>
       <a href="https://apulido305.github.io/spelling/">Spelling</a>
+      <a href="https://apulido305.github.io/math-arcade/">Math Arcade</a>
       <a href="https://apulido305.github.io/multiplication/">Multiplication</a>
     </nav>
   </header>
@@ -353,7 +360,7 @@ footer { margin-top: 48px; font-family: var(--mono); font-size: 11px; color: var
           <h1>PULIDO_CORE <span class="slash">//</span> <span class="grad">APP_HUB</span></h1>
           <p>Mr. Pulido's study games, all in one place. Pick a game, hit launch, and start practicing right in your browser. No installs needed.</p>
           <div class="badges">
-            <div class="badge"><span class="icon" style="color:var(--primary-fixed)">dns</span><span class="k">DEPLOYED:</span><span class="v" id="app-count">7 Apps</span></div>
+            <div class="badge"><span class="icon" style="color:var(--primary-fixed)">dns</span><span class="k">DEPLOYED:</span><span class="v" id="app-count">8 Apps</span></div>
             <div class="badge"><span class="icon" style="color:var(--tertiary-fixed)">category</span><span class="k">SUBJECTS:</span><span class="v">Bible · Biology · Chemistry · Earth &amp; Space · Computer Science · Math · Spelling</span></div>
             <div class="badge"><span class="icon" style="color:var(--green)">bolt</span><span class="k">RUNS IN:</span><span class="v">Any Browser</span></div>
           </div>
@@ -545,6 +552,28 @@ footer { margin-top: 48px; font-family: var(--mono); font-size: 11px; color: var
           </div>
         </article>
 
+        <!-- Math Arcade -->
+        <article class="tile" data-cat="math" data-keys="math arcade grade 6 7 8 algebra geometry algebra ii precalculus calculus statistics college fractions equations graphs cards quiz vs arena multiplayer">
+          <a class="thumb" href="https://apulido305.github.io/math-arcade/" aria-label="Launch Math Arcade">
+            <div class="thumb-art art-math" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><path d="M0 60h200M100 0v120" stroke="#5a64a8" stroke-width="1.5"/><path d="M30 6Q100 170 170 6" fill="none" stroke="#ff6b9d" stroke-width="4" stroke-linecap="round"/><circle cx="100" cy="88" r="5" fill="#f3dd7a"/></svg>
+              <span class="eq">y = x²</span>
+            </div>
+            <span class="tag-level" style="background:#ff6b9d;color:#2a0716">Card Battler</span>
+            <span class="tag-time">SOLO + VS ARENA</span>
+            <span class="launch"><span class="btn"><span class="icon">play_arrow</span>Launch</span></span>
+          </a>
+          <div class="meta">
+            <div class="avatar" style="background:#ffe3ee;color:#831843"><span class="icon">functions</span></div>
+            <div class="meta-body">
+              <h3><a href="https://apulido305.github.io/math-arcade/">Math Arcade</a></h3>
+              <div class="byline">Mr. Pulido · Math <span class="icon fill">check_circle</span></div>
+              <p class="desc">Grade 6 to College math card quiz. Pick your level, solve fresh problems, hunt for errors and match graphs, then battle classmates live in VS Arena.</p>
+              <div class="chips"><span class="chip pink">Grades 6–College</span><span class="chip">160 Cards</span><span class="chip violet">Multiplayer</span></div>
+            </div>
+          </div>
+        </article>
+
         <!-- Multiplication -->
         <article class="tile" data-cat="math" data-keys="multiplication times tables math flashcards 1-12 facts">
           <a class="thumb" href="https://apulido305.github.io/multiplication/" aria-label="Launch Multiplication Practice">
@@ -623,6 +652,7 @@ footer { margin-top: 48px; font-family: var(--mono); font-size: 11px; color: var
     code: { name: "Code Arcade", url: "https://apulido305.github.io/code-arcade/", cat: "cs" },
     bible: { name: "Scripture Arcade", url: "https://apulido305.github.io/bible-arcade/", cat: "bible" },
     spelling: { name: "Spelling Flashcards", url: "https://apulido305.github.io/spelling/", cat: "spelling" },
+    math: { name: "Math Arcade", url: "https://apulido305.github.io/math-arcade/", cat: "math" },
     multiplication: { name: "Multiplication Practice", url: "https://apulido305.github.io/multiplication/", cat: "math" }
   };
   var ALIASES = { element: "elemental", elements: "elemental", chem: "elemental", chemistry: "elemental",
@@ -630,7 +660,8 @@ footer { margin-top: 48px; font-family: var(--mono); font-size: 11px; color: var
     earth: "space", earthspace: "space", astronomy: "space", planets: "space", stars: "space",
     python: "code", py: "code", cs: "code", coding: "code", tracy: "code", turtle: "code",
     scripture: "bible", niv: "bible", verse: "bible", verses: "bible",
-    sp: "spelling", spell: "spelling", words: "spelling", math: "multiplication", mult: "multiplication", times: "multiplication" };
+    sp: "spelling", spell: "spelling", words: "spelling", mult: "multiplication", times: "multiplication",
+    algebra: "math", geometry: "math", calculus: "math", calc: "math", precalc: "math", stats: "math" };
 
   var tiles = Array.prototype.slice.call(document.querySelectorAll(".tile"));
   var filterBtns = Array.prototype.slice.call(document.querySelectorAll("[data-filter]"));
@@ -706,7 +737,7 @@ footer { margin-top: 48px; font-family: var(--mono); font-size: 11px; color: var
     switch (verb) {
       case "help":
         line("ls apps          list every app", "info");
-        line("./play <name>    launch an app (elemental, cell, space, code, bible, spelling, multiplication, random)", "info");
+        line("./play <name>    launch an app (elemental, cell, space, code, bible, math, spelling, multiplication, random)", "info");
         line("grep <word>      search the grid", "info");
         line("clear            clear this screen", "info");
         break;
