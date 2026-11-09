@@ -21,6 +21,7 @@ The games are served from `https://apulido305.github.io/<repo>/`, because the sc
 | History Arcade | https://apulido305.github.io/history-arcade/ | [history-arcade](https://github.com/apulido305/history-arcade) |
 | Spelling Flashcards | https://apulido305.github.io/spelling/ | [spelling](https://github.com/apulido305/spelling) |
 | Multiplication Practice | https://apulido305.github.io/multiplication/ | [multiplication](https://github.com/apulido305/multiplication) |
+| Tracy Point Finder | https://apulido305.github.io/tracy-point-finder/ | [tracy-point-finder](https://github.com/apulido305/tracy-point-finder) |
 
 ## Adding an app
 
